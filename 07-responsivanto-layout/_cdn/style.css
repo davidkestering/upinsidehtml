@@ -339,6 +339,7 @@ MAIN_SCHOOL
 .main_school_content{
     max-width: 1300px;
     margin: 0 auto;
+    padding: 0 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -709,6 +710,21 @@ FOOTER
     .main_optin_content form input[type=text],.main_optin_content form input[type=email]{
         padding: 6px 12px !important;
     }
+
+    .main_school_content_left{
+        flex-basis: 100%;
+    }
+
+    .main_school_content_right{
+        flex-basis: 200px;
+        max-width: 200px;
+        padding: 20px;
+    }
+
+    .main_school_address{
+        flex-basis: calc(100% - 200px) !important;
+        margin: auto;
+    }
 }
 
 /*
@@ -741,6 +757,13 @@ FOOTER
 
     .main_course_rating_title h2{
         font-size: 2em;
+    }
+
+    .main_school_list > article{
+        flex-basis: 100%;
+        margin: 10px 0;
+        font-size: 0.9em;
+        line-height: 2em;
     }
 }
 
@@ -776,6 +799,20 @@ FOOTER
 
     .main_course_rating_content_comment > article{
         flex-basis: 100%;
+    }
+}
+
+/*
+520px = 32em
+ */
+@media(max-width: 32em){
+    .main_school_content_right{
+        display: none;
+    }
+
+    .main_school_address{
+        flex-basis: 100% !important;
+        margin: auto;
     }
 }
 
