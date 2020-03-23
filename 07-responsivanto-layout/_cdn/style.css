@@ -711,6 +711,20 @@ FOOTER
     .main_cta .main_cta_content .btn{
         font-size: 0.5em;
     }
+
+    .main_blog article{
+        flex-basis: calc(33% - 10px);
+    }
+}
+
+/*
+640px = 40em
+ */
+
+@media(max-width: 40em){
+    .main_blog article{
+        flex-basis: calc(50% - 10px);
+    }
 }
 
 /*
@@ -727,5 +741,9 @@ FOOTER
 
     .main_header_content_menu_mobile{
         flex-basis: calc(100% - 220px) !important;
+    }
+
+    .main_blog article{
+        flex-basis: calc(100% - 10px);
     }
 }
